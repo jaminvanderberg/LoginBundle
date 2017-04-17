@@ -1,0 +1,23 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset( 'assets/css/login.css' ) }}" >    
+{% endblock %}
+
+{% block fos_user_content %}    
+    <div class="container-fluid full-height login-area">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8">
+                <div class="text-center logo-area"><img src="{{ asset( 'assets/image/logo.png' ) }}"></div>
+         
+                <div class="row">
+                    <div class="col-md-12">
+                        {{ block( 'content' ) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock fos_user_content %}

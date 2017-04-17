@@ -1,0 +1,14 @@
+{% extends "LoginBundle::security.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% set alert = 'warning' %}
+
+{% block security_form %}
+<div class="alert alert-warning">
+    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
+    {% if targetUrl %}
+    <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
+    {% endif %}
+</div>
+{% endblock %}

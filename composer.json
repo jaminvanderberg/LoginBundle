@@ -1,0 +1,25 @@
+{
+    "name": "jaminv/login-bundle",
+    "version": "0.0.1",
+    "license": "Apache-2.0",
+    "description": "Layouts for simplifying FOSUserBundle implementation",
+	  "repositories": [
+        {
+            "type": "package",
+            "url": "https://github.com/jaminvanderberg/LoginBundle"
+        }
+    ],
+    "require": {
+        "friendsofsymfony/user-bundle": "dev-master"
+    },    
+    "required": [],
+    "autoload": {
+        "psr-4": {
+            "jaminv\\ACLFilterBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
+}
+

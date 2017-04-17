@@ -1,0 +1,11 @@
+{% extends "LoginBundle::security.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% set alert = 'warning' %}
+
+{% block security_form %}
+<div class="alert alert-warning">
+{{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime}, 'FOSUserBundle') }}
+</div>
+{% endblock %}

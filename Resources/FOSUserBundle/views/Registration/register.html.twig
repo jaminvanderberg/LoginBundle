@@ -1,0 +1,23 @@
+{% extends "LoginBundle::security.html.twig" %}
+{% set option = 'register' %}
+
+{% form_theme form with [ 'form/bootstrap_4_layout.html.twig', 'form/bootstrap.html.twig', _self ] %}
+
+{% block icon %}
+    {% if name == 'username' %}
+        <i class="fa fa-user"></i>
+    {% endif %}
+{% endblock %}
+    
+{% block security_form %}
+    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.username) }}
+        {{ form_row(form.plainPassword.first) }}
+        {{ form_row(form.plainPassword.second) }}
+
+        <div>
+            <input class="btn btn-success btn-block" type="submit" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" />
+        </div>
+    {{ form_end(form) }}
+{% endblock security_form %}

@@ -1,0 +1,6 @@
+{% extends "LoginBundle:security.html.twig" %}
+{% set option = 'login' %}
+    
+{% block security_form %}
+    {{ include( 'security/login_form.html.twig' ) }}
+{% endblock security_form %}
