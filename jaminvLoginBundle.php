@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-namespace jaminv\ACLFilterBundle;
+namespace jaminv\LoginBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use jaminv\ACLFilterBundle\DependencyInjection\jaminvACLFilterExtension;
+//use jaminv\ACLFilterBundle\DependencyInjection\jaminvACLFilterExtension;
 
 /**
  * VIBSecurityBundle
