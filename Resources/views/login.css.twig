@@ -4,7 +4,7 @@ html, body {
 }
   
 body {
-    background: url({{ asset(image_bkg|escape) }} ) no-repeat center center fixed; 
+    background: url({{ asset(image_bkg)|raw }} ) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
