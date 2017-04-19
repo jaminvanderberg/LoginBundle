@@ -26,6 +26,7 @@ or edit composer.json:
         {
             $bundles = [
                 ...
+                new FOS\UserBundle\FOSUserBundle(),
                 new jaminv\LoginBundle\jaminvLoginBundle(),
 
                 new AppBundle\AppBundle(),

@@ -1,0 +1,25 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset( 'assets/css/login.css' ) }}" >    
+{% endblock %}
+
+{% set option = 'login' %}
+{% set social = true %}
+
+{% block fos_user_content %}
+    <div class="container-fluid full-height">
+        <div class="row full-height">
+            <div class="col-lg-8 hidden-md-down">{% block content %}{% endblock %}</div>
+            <div class="col-lg-4 login-area full-height">
+                {% embed 'jaminvLoginBundle::form_layout.html.twig' %}
+                    {% block security_form %}
+                        {{ include( 'jaminvLoginBundle::login_form.html.twig' ) }}
+                    {% endblock %}
+                {% endembed %}
+            </div>
+        </div>
+    </div>
+{% endblock fos_user_content %}
+
