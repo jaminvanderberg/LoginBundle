@@ -13,9 +13,9 @@
         <div class="row full-height">
             <div class="col-lg-8 hidden-md-down">{% block content %}{% endblock %}</div>
             <div class="col-lg-4 login-area full-height">
-                {% embed 'jaminvLoginBundle::form_layout.html.twig' %}
+                {% embed 'Layout/form_layout.html.twig' %}
                     {% block security_form %}
-                        {{ include( 'jaminvLoginBundle::login_form.html.twig' ) }}
+                        {{ include( 'Layout/login_form.html.twig' ) }}
                     {% endblock %}
                 {% endembed %}
             </div>
