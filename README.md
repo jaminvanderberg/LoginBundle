@@ -7,14 +7,14 @@ It provides a welcome screen with a login form on the right,
 
 ### Composer Install
 
-    composer require jaminv/aclfilter-bundle
+    composer require jaminv/login-bundle
 
 or edit composer.json:
 
     # /composer.json
     "require": {
         ...
-        "jaminv/loginfilter-bundle": "dev-master"
+        "jaminv/login-bundle": "dev-master"
     },
 
 ### Register Bundle
