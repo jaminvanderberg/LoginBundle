@@ -15,7 +15,7 @@
     "required": [],
     "autoload": {
         "psr-4": {
-            "jaminv\\ACLFilterBundle\\": ""
+            "jaminv\\LoginBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
