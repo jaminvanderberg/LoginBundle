@@ -26,7 +26,7 @@ or edit composer.json:
         {
             $bundles = [
                 ...
-                new jaminv\ACLFilterBundle\jaminvACLFilterBundle(),
+                new jaminv\ACLFilterBundle\jaminvLoginBundle(),
 
                 new AppBundle\AppBundle(),
             ];

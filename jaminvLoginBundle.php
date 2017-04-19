@@ -26,8 +26,6 @@ use jaminv\ACLFilterBundle\DependencyInjection\jaminvACLFilterExtension;
  *
  * @author Radoslaw Kamil Ejsmont <radoslaw@ejsmont.net>
  */
-class jaminvACLFilterBundle extends Bundle {
-    public function getContainerExtension() {
-        return new jaminvACLFilterExtension();
-    }
+class jaminvLoginBundle extends Bundle {
+
 }
