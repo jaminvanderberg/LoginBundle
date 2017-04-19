@@ -2,7 +2,8 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset( 'assets/css/login.css' ) }}" >    
+    <link rel="stylesheet" href="{{ asset(image_logo) }}" >   
+    <style type="text/css">{% include 'jaminvLoginBundle::login.css.twig' %}</style>
 {% endblock %}
 
 {% set option = 'login' %}
@@ -10,7 +11,7 @@
 
 {% block fos_user_content %}
     <div class="container-fluid full-height">
-        <div class="row full-height">
+        <div class="row login-full-height">
             <div class="col-lg-8 hidden-md-down">{% block content %}{% endblock %}</div>
             <div class="col-lg-4 login-area full-height">
                 {% embed 'jaminvLoginBundle:Layout:form_layout.html.twig' %}
