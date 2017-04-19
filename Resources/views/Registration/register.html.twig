@@ -1,7 +1,7 @@
 {% extends "jaminvLoginBundle:Layout:security.html.twig" %}
 {% set option = 'register' %}
 
-{% form_theme form with [ 'form/bootstrap_4_layout.html.twig', 'form/bootstrap.html.twig', _self ] %}
+{% form_theme form with [ 'jaminvLoginBundle:form:bootstrap_4_layout.html.twig', 'jaminvLoginBundle:form:bootstrap.html.twig', _self ] %}
 
 {% block icon %}
     {% if name == 'username' %}
