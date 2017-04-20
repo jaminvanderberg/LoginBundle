@@ -1,6 +1,6 @@
 <?php
 
-namespace jaminvLoginBundle\Controller;
+namespace jaminv\LoginBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\RedirectResponse;

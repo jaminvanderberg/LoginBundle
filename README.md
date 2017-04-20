@@ -95,8 +95,8 @@ page.  `image_bkg` defines the (web relative) path for a high-resolution image t
 
 In the default setup, LoginBundle is looking for two twig templates:
 
-    * /app/Resources/view/base.html.twig
-    * /app/Resources/view/welcome.html.twig
+* /app/Resources/view/base.html.twig
+* /app/Resources/view/welcome.html.twig
 
 #### base.html.twig
 
@@ -135,7 +135,7 @@ properly.  It's likely easier to just not but the `body` element inside an html 
 
 #### welcome.html.twig
 
-welcome.html.twig allows you define the welcome message the will show on the left side of the screen. By default,
+welcome.html.twig allows you define the welcome message that will show on the left side of the screen. By default,
 the login form will be the right third of the page, and you can put a welcome message on the remaining two thirds of
 the page.  Note that this message may not show up on low-resolution displays (like phones), which may only show the login
 form.  So additional customization may be available here in the future.
