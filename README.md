@@ -3,6 +3,17 @@
 This bundle creates a standardized layout for FOSBundle using Bootstrap 4.
 It provides a welcome screen with a login form on the right, 
 
+I created this bundle because I setup the same login templates for several different projects. I wanted
+to keep the templates uniform in case I made any changes, while still allowing customization such as background,
+logo, and welcome message.  This also helped pull a bunch of login templates out of my bundle, allowing me to better 
+focus on the templates that are more relevant to the project.
+
+If this is useful to someone else, great.  If not, then it's still useful to me.
+
+If comes close to meeting your needs but doesn't quite cover everything, there are a few options.  You can override
+the templates in your own bundle (see [documentation](documentation/override.md#templates)), you can fork this repository
+and modify the templates directly, or you can add additional configuration options and do a push request.
+
 ## Installation
 
 ### Composer Install
