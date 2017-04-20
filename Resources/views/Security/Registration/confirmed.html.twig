@@ -1,5 +1,4 @@
 {% extends "jaminvLoginBundle:Layout:security.html.twig" %}
-{% set page_social = false %}
 
 {% trans_default_domain 'FOSUserBundle' %}
 
@@ -7,6 +6,9 @@
 
 {% block security_form %}
 <div class="alert alert-warning">
-{{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime}, 'FOSUserBundle') }}
+    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
+    {% if targetUrl %}
+    <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
+    {% endif %}
 </div>
 {% endblock %}
