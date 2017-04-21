@@ -6,13 +6,13 @@
 {% endblock %}
 
 {% set option = 'login' %}
-{% set social = true %}
+{% set page_social = true %}
 
 {% block fos_user_content %}
     <div class="container-fluid full-height">
         <div class="row full-height">
             <div class="col-lg-8 hidden-md-down">{% block welcome %}{% endblock %}</div>
-            <div class="col-lg-4 login-area height">
+            <div class="col-lg-4 login-area full-height">
                 {% embed 'jaminvLoginBundle:Layout:form_layout.html.twig' %}
                     {% block security_form %}
                         {{ include( 'jaminvLoginBundle:Layout:login_form.html.twig' ) }}

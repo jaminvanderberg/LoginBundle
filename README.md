@@ -92,6 +92,9 @@ There are also a few simple configs for this bundle, all of which go in config.y
         globals:
             image_bkg: "assets/image/login-bkg.jpg"
             image_logo: "assets/image/logo.png"
+            logo_height: 225px
+            logo_width: 300px
+
 
 In the parameters section, you need to define the default route for a user once they have logged in.  This route will
 not be used if they are redirected to another page.  It is used when they go to the main page (/) and login.  Here,
@@ -100,7 +103,8 @@ I've used the sample value 'home'.  It can be whatever route works best with you
 In the Twig global configuration, you'll want to add some parameters that allow you to customize the look of the login/welcome
 page.  `image_bkg` defines the (web relative) path for a high-resolution image to use for the background of the login page.
 `image_logo` defines the (web relative) path for a logo image.  This image can be whatever size you want, but somewhere around 
-300-400 pixels wide is probably ideal.
+300-400 pixels wide is probably ideal.  Specifying the logo height and width prevents the page from jumping when the logo
+loads.  It is highly recommended that you do this.
 
 ### Templates
 
