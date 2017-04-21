@@ -1,0 +1,6 @@
+security:
+    login:
+        forgot: Forgot Password?
+        social:
+            google: Google
+            facebook: Facebook
